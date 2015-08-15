@@ -16,3 +16,68 @@ img {
 	padding: 0em;
 	margin: -.1em;
 }
+
+.icons {
+  	position: fixed;
+  	width: 50px;
+  	height: 300px;
+  	margin-left: 7em;
+  	margin-top: 3em
+}
+
+.contact {
+	padding: 1em;
+}
+
+.icons a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: yellow;
+}
+
+.menu {
+	display: none;
+}
+
+@media only screen and (max-width: 650px) {
+	.icons {
+		z-index: 1;
+		margin-top: 5em;
+		margin-left: 1.25em;
+		display: none;
+	}
+
+	.icons a {
+		color: black;
+	}
+
+	.contact {
+		background-color: white;
+		border-style: solid;
+		border-color: black;
+		border-radius: 10px;
+		padding: .5em;
+	}
+
+	.icons a:hover {
+		color: gray;
+	}
+	
+	.menu {
+		font-size: 3em;
+		display: inline;
+	}
+
+	.fa-bars {
+		position: fixed;
+		z-index: 1;	
+		padding-top: .5em;
+		padding-left: .5em;
+		color: gray;
+	}
+
+}
